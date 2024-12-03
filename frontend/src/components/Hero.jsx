@@ -32,8 +32,8 @@ const Hero = () => {
             All that aside, I enjoy the process of solving problems, exploring
             the cloud, and leveraging these technologies to create impactful
             solutions. Please feel free to reach out if you&apos;d like to build
-            beautiful, professional websites. I look forward to discuss your
-            next project.✅
+            beautiful, professional websites or just need a PM, who get things
+            done ✅. I look forward to discuss your next project.
           </p>
         </div>
       </div>
