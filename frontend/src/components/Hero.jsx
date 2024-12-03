@@ -11,7 +11,7 @@ const Hero = () => {
             I&apos;m Linh, Free-time Software Developer and professional Project
             Powerhouse. Love swimming in the ocean, vietnamese street food,
             cats, curious about the universe, cloud computing, all things art,
-            and all things coding.
+            and all things code.
           </p>
 
           <p className="mb-4">
