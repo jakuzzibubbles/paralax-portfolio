@@ -1,19 +1,17 @@
-
-
 const Hero = () => {
   return (
     <section
       id="hero"
       className="h-screen flex flex-col justify-center items-center text-center text-black pt-16"
     >
-      <div className="w-screen p-6 flex flex-col justify-center items-center">
+      <div className="w-screen p-6 flex flex-col justify-center items-center mt-16">
         <h3 className="text-3xl text-black">Hi, and welcome to my Portfolio</h3>
         <div className="text-black mt-4 max-w-2xl">
           <p className="mb-4">
             I&apos;m Linh, Free-time Software Developer and professional Project
             Powerhouse. Love swimming in the ocean, vietnamese street food,
-            cats, curious about the universe, cloud computing, all things art, and all things
-            coding.
+            cats, curious about the universe, cloud computing, all things art,
+            and all things coding.
           </p>
 
           <p className="mb-4">

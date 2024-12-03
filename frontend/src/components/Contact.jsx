@@ -1,4 +1,4 @@
-import { personalDetails } from "../utils/data"
+import { personalDetails } from "../utils/data";
 
 const Contact = () => {
   return (
@@ -10,7 +10,7 @@ const Contact = () => {
         <h2 className="text-center w-full p-3 rounded-lg text-pink text-4xl font-semibold">
           Let&apos;s Connect 🦉
         </h2>
-      
+
         {/* Links */}
         <div className="flex justify-center items-center gap-4 flex-wrap">
           {personalDetails.links.map((link) => (
