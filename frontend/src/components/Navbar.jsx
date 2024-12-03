@@ -66,13 +66,13 @@ const Navbar = () => {
             <div className="flex flex-col gap-2 ml-auto px-4">
               <li>
                 <Link
-                  to="projects"
+                  to="gallery"
                   smooth
                   spy
                   offset={-80}
                   className="menu-item"
                 >
-                  Projects
+                  Gallery
                 </Link>
               </li>
               <li>
