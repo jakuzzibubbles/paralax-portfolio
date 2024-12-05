@@ -8,6 +8,8 @@ import awsBuilder from "/assets/aws-builder.png";
 import aws from "/assets/aws.png";
 import Linux from "/assets/linux.jpg";
 import Myself from "/assets/myself.png";
+import awsQuest from "/assets/aws-quest.png";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState();
@@ -47,6 +49,12 @@ const Navbar = () => {
 
               <img
                 src={aws}
+                alt="AWS"
+                className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
+              />
+
+              <img
+                src={awsQuest}
                 alt="AWS"
                 className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
               />
