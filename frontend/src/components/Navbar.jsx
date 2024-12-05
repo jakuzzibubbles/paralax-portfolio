@@ -37,18 +37,18 @@ const Navbar = () => {
               <img
                 src={Myself}
                 alt="Profile"
-                className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full transition-transform duration-300 ease-in-out hover:scale-125 border border-pink-800"
+                className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full transition-transform duration-300 ease-in-out hover:scale-125 border border-pink-800 mr-4"
               />
+              <img
+                src={Linux}
+                alt="Linux"
+                className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] transition-transform duration-300 ease-in-out hover:scale-150 mr-2"
+              />
+
               <img
                 src={aws}
                 alt="AWS"
                 className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
-              />
-
-              <img
-                src={Linux}
-                alt="Linux"
-                className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] transition-transform duration-300 ease-in-out hover:scale-150"
               />
 
               <img
