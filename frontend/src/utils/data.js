@@ -139,7 +139,7 @@ const projects = [
     description:
       "The Travel App is a MERN stack platform where users can securely log in, create, view, and manage travel stories with descriptions and images. It features personalized user dashboards, token-based authentication, safe data storage, and backend API management.",
     image: TravelApp,
-    demo: "https://jakuzzibubbles.github.io/TravelStory-App/",
+    demo: "/assets/travel-app.mp4",
     code: "https://github.com/jakuzzibubbles/TravelStory-App",
   },
   {
