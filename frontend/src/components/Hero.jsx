@@ -28,13 +28,17 @@ const Hero = () => {
             highly efficient.
           </p>
 
-          <p className="mb-4">
+          <p>
             All that aside, I enjoy the process of solving problems, exploring
             the cloud, and leveraging these technologies to create impactful
             solutions. Please feel free to reach out if you&apos;d like to build
             beautiful, professional websites or just need a PM, who get things
-            done ✅. I look forward to discuss your next project.
+            done.
           </p>
+
+          <p>✅</p>
+
+          <p className="mb-4">I look forward to discuss your next project.</p>
         </div>
       </div>
     </section>
