@@ -25,6 +25,16 @@ const Projects = () => {
     setExpandedProject(null);
   };
 
+  // Render description with HTML elements (e.g., paragraphs, lists, bold text)
+  const renderDescription = (description) => {
+    const formattedDescription = description
+      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>") // Bold text
+      .replace(/-\s*(.*?)\n/g, "<ul><li>$1</li></ul>") // Bullet points
+      .replace(/\n\n/g, "<p></p>"); // Paragraphs
+
+    return { __html: formattedDescription };
+  };
+
   return (
     <section id="gallery" className="p-10 mt-16">
       <h2 className="text-3xl text-center mb-5 mt-20">Gallery</h2>
@@ -113,12 +123,13 @@ const Projects = () => {
                 }
                 className="w-full h-60 object-cover rounded-lg mb-4"
               />
-              <p className="mb-4">
-                {
+              <div
+                className="mb-4"
+                dangerouslySetInnerHTML={renderDescription(
                   projects.find((project) => project.id === expandedProject)
                     ?.description
-                }
-              </p>
+                )}
+              />
             </div>
           </div>
         </div>
