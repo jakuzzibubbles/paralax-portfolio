@@ -25,13 +25,15 @@ const Skills = () => {
 
 const SkillsCard = ({ icon: Icon, title, comment }) => {
   return (
-    <div className="bg-pink-600/60 rounded-border border-pink-900 p-5 rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out hover:bg-pink-700 hover:scale-105">
-      <div className="flex items-center justify-between mb-5">
+    <div className="bg-pink-600/60 rounded-border border-pink-900 p-5 rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out hover:bg-pink-700 hover:scale-105 relative">
+      <div className="flex items-center justify-between">
         <p className="text-base">{title}</p>
         <Icon className="text-black text-3xl mr-4" />
       </div>
 
-      <p className="text-xs font-light leading-5 opacity-80">{comment}</p>
+      <p className="text-xs font-light leading-5 opacity-0 hover:opacity-100 absolute inset-0 bg-pink-700/90 p-5 rounded-lg flex items-center justify-center text-white transition-opacity duration-300">
+        {comment}
+      </p>
     </div>
   );
 };

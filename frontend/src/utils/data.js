@@ -52,84 +52,86 @@ const personalDetails = {
 const skills = [
   {
     id: "1",
-    title: "JavaScript",
-    icon: SiJavascript,
-    comment:
-      "Mastering JavaScript—transforming ideas into interactive, dynamic features!",
-  },
-  {
-    id: "2",
-    title: "React",
-    icon: SiReact,
-    comment:
-      "Building interactive UIs that keep users engaged—like a good book!",
-  },
-  {
-    id: "3",
-    title: "NodeJs",
-    icon: IoLogoNodejs,
-    comment:
-      "Creating efficient backends that handle requests with ease and speed!",
-  },
-  {
-    id: "4",
-    title: "Express",
-    icon: SiExpress,
-    comment:
-      "Building powerful web servers that deliver smooth, real-time experiences!",
-  },
-  {
-    id: "5",
-    title: "MongoDB",
-    icon: SiMongodb,
-    comment:
-      "Managing data like a pro—keeping everything organized, even when it wants to party!",
-  },
-  {
-    id: "6",
-    title: "HTML5",
-    icon: SiHtml5,
-    comment: "Building the web, one semantic tag at a time!",
-  },
-  {
-    id: "7",
-    title: "CSS3",
-    icon: SiCss3,
-    comment: "Styling the web with precision—making every pixel count!",
-  },
-  {
-    id: "8",
-    title: "Tailwind CSS",
-    icon: SiTailwindcss,
-    comment: "Building UI components with ease—Tailwind is my CSS superhero!",
-  },
-  {
-    id: "9",
-    title: "Git & GitHub",
-    icon: SiGit,
-    comment:
-      "Version control made simple—keeping code organized and collaborative!",
-  },
-  {
-    id: "10",
-    icon: FaCloud,
-    title: "Cloud Computing",
-    comment: "Transforming clouds into seamless solutions—no rainy days here!",
-  },
-  {
-    id: "12",
     icon: FaProjectDiagram,
     title: "Digital Project Management",
     comment:
       "Guiding projects to success while keeping the team engaged and motivated.",
   },
   {
-    id: "13",
+    id: "2",
+    title: "JavaScript",
+    icon: SiJavascript,
+    comment:
+      "Mastering JavaScript—transforming ideas into interactive, dynamic features!",
+  },
+  {
+    id: "3",
+    title: "React",
+    icon: SiReact,
+    comment:
+      "Building interactive UIs that keep users engaged—like a good book!",
+  },
+  {
+    id: "4",
+    title: "NodeJs",
+    icon: IoLogoNodejs,
+    comment:
+      "Creating efficient backends that handle requests with ease and speed!",
+  },
+  {
+    id: "5",
+    title: "Express",
+    icon: SiExpress,
+    comment:
+      "Building powerful web servers that deliver smooth, real-time experiences!",
+  },
+  {
+    id: "6",
+    title: "MongoDB",
+    icon: SiMongodb,
+    comment:
+      "Managing data like a pro—keeping everything organized, even when it wants to party!",
+  },
+  {
+    id: "7",
+    title: "HTML5",
+    icon: SiHtml5,
+    comment: "Building the web, one semantic tag at a time!",
+  },
+  {
+    id: "8",
+    title: "CSS3",
+    icon: SiCss3,
+    comment: "Styling the web with precision—making every pixel count!",
+  },
+  {
+    id: "9",
+    title: "Tailwind CSS",
+    icon: SiTailwindcss,
+    comment: "Building UI components with ease—Tailwind is my CSS superhero!",
+  },
+  {
+    id: "10",
+    title: "Git & GitHub",
+    icon: SiGit,
+    comment:
+      "Version control made simple—keeping code organized and collaborative!",
+  },
+  {
+    id: "11",
+    icon: FaCloud,
+    title: "Cloud Computing",
+    comment: "Transforming clouds into seamless solutions—no rainy days here!",
+  },
+
+  {
+    id: "12",
     icon: GiSprint,
     title: "Agile Methodologies & Scrum",
     comment:
       "Embracing agility like a pro—quick on my feet and faster with coffee!",
   },
+  
 ];
 
 const projects = [
