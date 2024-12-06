@@ -50,9 +50,7 @@ const Projects = () => {
               className="w-full h-40 object-cover rounded-lg"
             />
             <h3 className="text-2xl text-right mt-3">{project.title}</h3>
-            <p className="mt-2 text-ellipsis line-clamp-2">
-              {project.description}
-            </p>
+            <p className="mt-2 text-ellipsis line-clamp-2">{project.intro}</p>
             <button
               onClick={() => handleProjectClick(project.id)}
               className="mt-2 text-pink-950 font-semibold hover:underline"
@@ -73,6 +71,7 @@ const Projects = () => {
                     ?.title
                 }
               </h3>
+
               <button
                 onClick={handleClose}
                 className="text-pink-500 hover:text-pink-700 text-4xl"
@@ -80,6 +79,7 @@ const Projects = () => {
                 &times;
               </button>
             </div>
+
             <div className="flex flex-col">
               {projects.find((project) => project.id === expandedProject)
                 ?.demo && (
@@ -110,6 +110,16 @@ const Projects = () => {
                 </a>
               )}
             </div>
+
+            {projects.find((project) => project.id === expandedProject)
+              ?.intro && (
+              <p className="text-lg text-gray-700 mb-4">
+                {
+                  projects.find((project) => project.id === expandedProject)
+                    ?.intro
+                }
+              </p>
+            )}
 
             <div className="mt-4">
               <img
