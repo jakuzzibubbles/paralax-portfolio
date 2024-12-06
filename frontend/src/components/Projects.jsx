@@ -28,9 +28,9 @@ const Projects = () => {
   // Render description with HTML elements (e.g., paragraphs, lists, bold text)
   const renderDescription = (description) => {
     const formattedDescription = description
-      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>") // Bold text
-      .replace(/-\s*(.*?)\n/g, "<ul><li>$1</li></ul>") // Bullet points
-      .replace(/\n\n/g, "<p></p>"); // Paragraphs
+      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+      .replace(/-\s*(.*?)\n/g, "<ul><li>$1</li></ul>")
+      .replace(/\n\n/g, "<p></p>");
 
     return { __html: formattedDescription };
   };
@@ -80,37 +80,6 @@ const Projects = () => {
               </button>
             </div>
 
-            <div className="flex flex-col">
-              {projects.find((project) => project.id === expandedProject)
-                ?.demo && (
-                <a
-                  href={
-                    projects.find((project) => project.id === expandedProject)
-                      ?.demo
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-pink-500 hover:underline"
-                >
-                  Demo
-                </a>
-              )}
-              {projects.find((project) => project.id === expandedProject)
-                ?.code && (
-                <a
-                  href={
-                    projects.find((project) => project.id === expandedProject)
-                      ?.code
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-pink-500 hover:underline"
-                >
-                  Code
-                </a>
-              )}
-            </div>
-
             {projects.find((project) => project.id === expandedProject)
               ?.intro && (
               <p className="text-lg text-gray-700 mb-4">
@@ -140,6 +109,22 @@ const Projects = () => {
                     ?.description
                 )}
               />
+            </div>
+            <div className="flex flex-col">
+              {projects.find((project) => project.id === expandedProject)
+                ?.demo && (
+                <a
+                  href={
+                    projects.find((project) => project.id === expandedProject)
+                      ?.demo
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-pink-400/50 text-center text-pink-800 text-xl py-2 px-14 rounded hover:bg-pink-600 hover:text-white transition-colors duration-200"
+                >
+                  Demo
+                </a>
+              )}
             </div>
           </div>
         </div>
