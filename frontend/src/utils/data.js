@@ -143,7 +143,7 @@ const projects = [
     id: "1",
     title: "Full Stack App",
     description:
-      "The Travel App is a MERN stack platform where users can securely log in, create, view, and manage travel stories with descriptions and images. It features personalized user dashboards, token-based authentication, safe data storage, and backend API management.",
+      "The Travel App is a MERN stack platform where users can securely log in, create, view, and manage travel stories with descriptions and images. It features:\n\n- **State Management**: Leveraging React hooks like `useState` and `useEffect` for seamless UI responsiveness. Mastery of asynchronous data fetching to handle user data and notes effectively.\n- **API Integration**: RESTful API handling with Axios, including custom Axios instances for streamlined request management, authentication headers, and robust error handling.\n- **Form Handling and Validation**: Designing user-friendly forms for creating and editing stories with proper validation logic, ensuring data integrity and smooth user interactions.\n- **Error Handling and Debugging**: Resolving bugs such as duplicate requests through refined `useEffect` dependencies and cleanup functions, optimizing app performance and network usage.\n- **UI Modals and Reusability**: Building reusable modals for adding and editing notes, maintaining a clean and modular codebase while effectively managing complex component hierarchies.\n\nThis project underscores the significance of clear component structure, effective debugging, and practical API handling. Moving forward, the goal is to enhance cloud deployment knowledge and gain hands-on experience with CI/CD pipelines.",
     image: TravelApp,
     demo: "/assets/travel-app.mp4",
     code: "https://github.com/jakuzzibubbles/TravelStory-App",
@@ -159,12 +159,12 @@ const projects = [
   },
   {
     id: "3",
-    title: "Memory Game",
+    title: "Business Website",
     description:
-      "This is a React-based memory card game where players must click each food item only once. The game features randomized item order, score tracking, and a styled UI with a dynamic grid and modal popups.",
-    image: MemoryGame,
-    demo: "https://the-odin-project-mu.vercel.app/",
-    code: "https://github.com/jakuzzibubbles/the-odin-project/tree/master/memory-card",
+      "I developed a website with a focus on improving its online visibility. My work included implementing strategic SEO optimization to boost the site's performance. As a result, the website advanced from the third page to the first page of Google search results within six months.",
+    image: HpBrunner,
+    demo: "https://www.hp-brunner.de/",
+    code: "https://www.ionos.de/websites/homepage-baukasten",
   },
   {
     id: "4",
@@ -177,12 +177,12 @@ const projects = [
   },
   {
     id: "5",
-    title: "Business Website",
+    title: "Memory Game",
     description:
-      "I developed a website with a focus on improving its online visibility. My work included implementing strategic SEO optimization to boost the site's performance. As a result, the website advanced from the third page to the first page of Google search results within six months.",
-    image: HpBrunner,
-    demo: "https://www.hp-brunner.de/",
-    code: "https://www.ionos.de/websites/homepage-baukasten",
+      "This is a React-based memory card game where players must click each food item only once. The game features randomized item order, score tracking, and a styled UI with a dynamic grid and modal popups.",
+    image: MemoryGame,
+    demo: "https://the-odin-project-mu.vercel.app/",
+    code: "https://github.com/jakuzzibubbles/the-odin-project/tree/master/memory-card",
   },
   {
     id: "6",

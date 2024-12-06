@@ -712,6 +712,10 @@ canvas {
   margin-top: -2.5rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -803,6 +807,10 @@ canvas {
   height: 10rem;
 }
 
+.h-60{
+  height: 15rem;
+}
+
 .h-\[50px\]{
   height: 50px;
 }
@@ -823,12 +831,20 @@ canvas {
   height: 100vh;
 }
 
+.max-h-screen{
+  max-height: 100vh;
+}
+
 .w-1\/2{
   width: 50%;
 }
 
 .w-11{
   width: 2.75rem;
+}
+
+.w-11\/12{
+  width: 91.666667%;
 }
 
 .w-\[50px\]{
@@ -917,6 +933,10 @@ canvas {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
 .text-ellipsis{
   text-overflow: ellipsis;
 }
@@ -951,6 +971,11 @@ canvas {
   border-color: rgb(131 24 67 / 0.8);
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .bg-pink-600{
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity, 1));
@@ -979,6 +1004,15 @@ canvas {
 
 .bg-transparent{
   background-color: transparent;
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
 }
 
 .object-cover{
@@ -1094,9 +1128,9 @@ canvas {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
-.text-blue-500{
+.text-pink-500{
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+  color: rgb(236 72 153 / var(--tw-text-opacity, 1));
 }
 
 .text-pink-600{
@@ -1104,9 +1138,9 @@ canvas {
   color: rgb(219 39 119 / var(--tw-text-opacity, 1));
 }
 
-.text-red-500{
+.text-pink-950{
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+  color: rgb(80 7 36 / var(--tw-text-opacity, 1));
 }
 
 .text-white{
@@ -1162,6 +1196,10 @@ canvas {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 .hover\:scale-105:hover{
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1192,6 +1230,11 @@ canvas {
 .hover\:bg-pink-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(190 24 93 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-pink-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(190 24 93 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-white:hover{
@@ -1234,6 +1277,10 @@ canvas {
     height: 80px;
   }
 
+  .md\:w-2\/3{
+    width: 66.666667%;
+  }
+
   .md\:w-\[100px\]{
     width: 100px;
   }
@@ -1260,6 +1307,10 @@ canvas {
 }
 
 @media (min-width: 1024px){
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

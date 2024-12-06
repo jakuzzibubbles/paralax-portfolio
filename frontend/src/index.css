@@ -43,6 +43,10 @@
   }
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 
 @layer components {
   .menu-item {

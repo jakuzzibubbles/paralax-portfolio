@@ -1,8 +1,21 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { projects } from "../utils/data";
 
 const Projects = () => {
   const [expandedProject, setExpandedProject] = useState(null);
+
+  useEffect(() => {
+    if (expandedProject !== null) {
+      document.body.classList.add("scroll-lock");
+    } else {
+      document.body.classList.remove("scroll-lock");
+    }
+
+    // Cleanup when the component unmounts
+    return () => {
+      document.body.classList.remove("scroll-lock");
+    };
+  }, [expandedProject]);
 
   const handleProjectClick = (projectId) => {
     setExpandedProject(projectId);
@@ -27,50 +40,89 @@ const Projects = () => {
               className="w-full h-40 object-cover rounded-lg"
             />
             <h3 className="text-2xl text-right mt-3">{project.title}</h3>
-            {expandedProject === project.id ? (
-              <div>
-                <p className="mt-2">{project.description}</p>
-                <div className="flex justify-between mt-3">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Demo
-                  </a>
-                  <a
-                    href={project.code}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Code
-                  </a>
-                </div>
-                <button
-                  onClick={handleClose}
-                  className="mt-3 text-red-500 hover:underline"
-                >
-                  Close
-                </button>
-              </div>
-            ) : (
-              <div>
-                <p className="mt-2 text-ellipsis line-clamp-2">
-                  {project.description}
-                </p>
-                <button
-                  onClick={() => handleProjectClick(project.id)}
-                  className="mt-2 text-blue-500 hover:underline"
-                >
-                  View Details
-                </button>
-              </div>
-            )}
+            <p className="mt-2 text-ellipsis line-clamp-2">
+              {project.description}
+            </p>
+            <button
+              onClick={() => handleProjectClick(project.id)}
+              className="mt-2 text-pink-950 font-semibold hover:underline"
+            >
+              View Details
+            </button>
           </div>
         ))}
       </div>
+
+      {expandedProject && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white w-11/12 md:w-2/3 lg:w-1/2 max-h-screen overflow-y-auto p-6 rounded-lg shadow-lg relative">
+            <div className="flex justify-between items-center mb-1">
+              <h3 className="text-2xl text-pink-600 ">
+                {
+                  projects.find((project) => project.id === expandedProject)
+                    ?.title
+                }
+              </h3>
+              <button
+                onClick={handleClose}
+                className="text-pink-500 hover:text-pink-700 text-4xl"
+              >
+                &times;
+              </button>
+            </div>
+            <div className="flex flex-col">
+              {projects.find((project) => project.id === expandedProject)
+                ?.demo && (
+                <a
+                  href={
+                    projects.find((project) => project.id === expandedProject)
+                      ?.demo
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-pink-500 hover:underline"
+                >
+                  Demo
+                </a>
+              )}
+              {projects.find((project) => project.id === expandedProject)
+                ?.code && (
+                <a
+                  href={
+                    projects.find((project) => project.id === expandedProject)
+                      ?.code
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-pink-500 hover:underline"
+                >
+                  Code
+                </a>
+              )}
+            </div>
+
+            <div className="mt-4">
+              <img
+                src={
+                  projects.find((project) => project.id === expandedProject)
+                    ?.image
+                }
+                alt={
+                  projects.find((project) => project.id === expandedProject)
+                    ?.title
+                }
+                className="w-full h-60 object-cover rounded-lg mb-4"
+              />
+              <p className="mb-4">
+                {
+                  projects.find((project) => project.id === expandedProject)
+                    ?.description
+                }
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
