@@ -40,20 +40,21 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
               Skills
             </a>
           </li>
-          <li className="mb-5">
-            <a
-              className="text-black font-semibold"
-              onClick={() => handleScroll("resume")}
-            >
-              Resume
-            </a>
-          </li>
+
           <li className="mb-5">
             <a
               className="text-black font-semibold"
               onClick={() => handleScroll("contact")}
             >
               Contact
+            </a>
+          </li>
+          <li className="mb-5">
+            <a
+              className="text-black font-semibold"
+              onClick={() => handleScroll("resume")}
+            >
+              Resume
             </a>
           </li>
         </ul>

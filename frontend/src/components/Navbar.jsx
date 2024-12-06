@@ -88,11 +88,7 @@ const Navbar = () => {
                   Skills
                 </Link>
               </li>
-              <li>
-                <Link to="resume" smooth spy offset={-80} className="menu-item">
-                  Resume
-                </Link>
-              </li>
+
               <li>
                 <Link
                   to="contact"
@@ -102,6 +98,11 @@ const Navbar = () => {
                   className="menu-item"
                 >
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="resume" smooth spy offset={-80} className="menu-item">
+                  Resume
                 </Link>
               </li>
             </div>
