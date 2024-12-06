@@ -14,14 +14,14 @@ const ResumeSection = () => {
         {!isResumeVisible ? (
           <button
             onClick={toggleResumeVisibility}
-            className="toggle-resume-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-800 hover:text-black transition-colors duration-200"
+            className="toggle-resume-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-600 hover:text-white transition-colors duration-200"
           >
             View Resume
           </button>
         ) : (
           <button
             onClick={toggleResumeVisibility}
-            className="toggle-resume-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-800 hover:text-black transition-colors duration-200"
+            className="toggle-resume-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-600 hover:text-white transition-colors duration-200"
           >
             Hide Resume
           </button>
@@ -42,7 +42,7 @@ const ResumeSection = () => {
           <a
             href="/LN-resume.pdf"
             download="LinhNguyen.pdf"
-            className="download-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-800 hover:text-black transition-colors duration-200"
+            className="download-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-600 hover:text-white transition-colors duration-200"
           >
             Download Resume
           </a>
