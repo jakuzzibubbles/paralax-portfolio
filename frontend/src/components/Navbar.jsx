@@ -28,7 +28,14 @@ const Navbar = () => {
         <nav className="w-full bg-pink-600/20 py-3 px-6 absolute left-0 top-0">
           <ul className="flex items-bottom w-full">
             <li>
-              <Link to="hero" smooth spy offset={-80} className="menu-item">
+              <Link
+                to="hero"
+                smooth="easeInOutQuint"
+                duration={200}
+                spy
+                offset={-100}
+                className="menu-item"
+              >
                 <div>
                   <span className="block text-4xl">LINH</span>
                   <span className="block text-4xl">NGUYEN</span>
@@ -75,16 +82,24 @@ const Navbar = () => {
               <li>
                 <Link
                   to="gallery"
-                  smooth
+                  smooth="easeInOutQuint"
+                  duration={200}
                   spy
-                  offset={-80}
+                  offset={-100}
                   className="menu-item"
                 >
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link to="skills" smooth spy offset={-80} className="menu-item">
+                <Link
+                  to="skills"
+                  smooth="easeInOutQuint"
+                  duration={200}
+                  spy
+                  offset={-100}
+                  className="menu-item"
+                >
                   Skills
                 </Link>
               </li>
@@ -92,16 +107,24 @@ const Navbar = () => {
               <li>
                 <Link
                   to="contact"
-                  smooth
+                  smooth="easeInOutQuint"
+                  duration={200}
                   spy
-                  offset={-80}
+                  offset={-100}
                   className="menu-item"
                 >
                   Contact
                 </Link>
               </li>
               <li>
-                <Link to="resume" smooth spy offset={-80} className="menu-item">
+                <Link
+                  to="resume"
+                  smooth="easeInOutQuint"
+                  duration={200}
+                  spy
+                  offset={-100}
+                  className="menu-item"
+                >
                   Resume
                 </Link>
               </li>

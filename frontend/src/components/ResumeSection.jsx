@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
+import Resume from "/assets/resume.png";
 
 const ResumeSection = () => {
   const [isResumeVisible, setIsResumeVisible] = useState(false);
@@ -9,34 +10,44 @@ const ResumeSection = () => {
 
   return (
     <section id="resume" className="p-6 relative mt-10">
-      <div className="buttons mb-4 flex justify-center items-center space-x-4">
-        <button
-          onClick={toggleResumeVisibility}
-          className="toggle-resume-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:underline hover:text-pink-700"
-        >
-          {isResumeVisible ? "Hide Resume" : "View Resume"}
-        </button>
+      <div className="buttons mb-4 flex flex-col items-center space-y-4">
+        {!isResumeVisible ? (
+          <button
+            onClick={toggleResumeVisibility}
+            className="toggle-resume-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-800 hover:text-black transition-colors duration-200"
+          >
+            View Resume
+          </button>
+        ) : (
+          <button
+            onClick={toggleResumeVisibility}
+            className="toggle-resume-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-800 hover:text-black transition-colors duration-200"
+          >
+            Hide Resume
+          </button>
+        )}
 
-        <a
-          href="/LN-resume.pdf"
-          download="LinhNguyen.pdf"
-          className="download-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:underline hover:text-pink-700"
-        >
-          Download Resume
-        </a>
+        {isResumeVisible && (
+          <div className="resume-container mt-4 flex justify-center">
+            <img
+              src={Resume}
+              alt="Resume"
+              width="80%"
+              style={{ border: "none" }}
+            />
+          </div>
+        )}
+
+        {isResumeVisible && (
+          <a
+            href="/LN-resume.pdf"
+            download="LinhNguyen.pdf"
+            className="download-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-800 hover:text-black transition-colors duration-200"
+          >
+            Download Resume
+          </a>
+        )}
       </div>
-
-      {isResumeVisible && (
-        <div className="resume-container mt-4 bg-white p-4 rounded shadow-lg border border-gray-300">
-          <embed
-            src="/LN-resume.pdf"
-            type="application/pdf"
-            width="100%"
-            height="500px"
-            style={{ border: "none" }}
-          />
-        </div>
-      )}
     </section>
   );
 };
