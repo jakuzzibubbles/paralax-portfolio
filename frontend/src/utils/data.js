@@ -186,7 +186,7 @@ const projects = [
     id: "6",
     title: "Product Launch",
     description:
-      "I led a solo project to help an established Israeli sweets company introduce their latest product to the German confectionery market. I facilitated strategic meetings between key decision-makers, ensuring smooth collaboration. Since its launch, the product has won several prestigious awards.",
+      "I executed a solo project to help an established Israeli sweets company introduce their latest product to the German confectionery market. I facilitated strategic meetings between key decision-makers, ensuring smooth collaboration. Since its launch, the product has won several prestigious awards.",
     image: Mooosh,
     demo: "https://tri-d-aix.com/sweet-stories/naschwatte/",
     code: "https://matokal.co.il/",
