@@ -21,6 +21,10 @@ import { GiSprint } from "react-icons/gi";
 import TravelApp from "/assets/travel-app.png";
 import Portfolio from "/assets/portfolio1.png";
 import MemoryGame from "/assets/memory-card.png";
+import TaskManager from "/assets/edit-note.png";
+import HpBrunner from "/assets/hp-brunner.png";
+import Mooosh from "/assets/mooosh.png";
+
 
 const personalDetails = {
   name: "Linh Nguyen",
@@ -159,6 +163,33 @@ const projects = [
     image: MemoryGame,
     demo: "https://the-odin-project-mu.vercel.app/",
     code: "https://github.com/jakuzzibubbles/the-odin-project/tree/master/memory-card",
+  },
+  {
+    id: "4",
+    title: "Task Manager",
+    description:
+      "This project is a simple notes application built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to create, read, update, and delete notes while managing authentication.",
+    image: TaskManager,
+    demo: "https://jakuzzibubbles.github.io/MERN-Notes/",
+    code: "https://github.com/jakuzzibubbles/MERN-Notes",
+  },
+  {
+    id: "5",
+    title: "Business Website",
+    description:
+      "I developed a website with a focus on improving its online visibility. My work included implementing strategic SEO optimization to boost the site's performance. As a result, the website advanced from the third page to the first page of Google search results within six months.",
+    image: HpBrunner,
+    demo: "https://www.hp-brunner.de/",
+    code: "https://www.ionos.de/websites/homepage-baukasten",
+  },
+  {
+    id: "6",
+    title: "Product Launch",
+    description:
+      "I led a solo project to help an established Israeli sweets company introduce their latest product to the German confectionery market. I facilitated strategic meetings between key decision-makers, ensuring smooth collaboration. Since its launch, the product has won several prestigious awards.",
+    image: Mooosh,
+    demo: "https://tri-d-aix.com/sweet-stories/naschwatte/",
+    code: "https://matokal.co.il/",
   },
 ];
 
