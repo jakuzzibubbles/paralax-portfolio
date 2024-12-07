@@ -17,7 +17,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
         <ul>
           <li className="mb-5">
             <a
-              className="text-black font-semibold"
+              className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("hero")}
             >
               Home
@@ -26,7 +26,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
 
           <li className="mb-5">
             <a
-              className="text-black font-semibold"
+              className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("gallery")}
             >
               Gallery
@@ -34,7 +34,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
           </li>
           <li className="mb-5">
             <a
-              className="text-black font-semibold"
+              className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("skills")}
             >
               Skills
@@ -43,7 +43,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
 
           <li className="mb-5">
             <a
-              className="text-black font-semibold"
+              className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("contact")}
             >
               Contact
@@ -51,7 +51,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
           </li>
           <li className="mb-5">
             <a
-              className="text-black font-semibold"
+              className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("resume")}
             >
               Resume
