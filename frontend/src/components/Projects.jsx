@@ -64,22 +64,24 @@ const Projects = () => {
       {expandedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white w-11/12 md:w-2/3 lg:w-1/2 max-h-screen overflow-y-auto p-6 rounded-lg shadow-lg relative">
-            <div className="flex justify-between items-center mb-1">
-              <h3 className="text-2xl text-pink-600 ">
-                {
-                  projects.find((project) => project.id === expandedProject)
-                    ?.title
-                }
-              </h3>
-
-              <button
-                onClick={handleClose}
-                className="text-pink-500 hover:text-pink-700 text-4xl"
-              >
-                &times;
-              </button>
+            {/* Fixed Header */}
+            <div className="sticky top-0 bg-white z-10 pb-2">
+              <div className="flex justify-between items-center mb-1 border-b pb-2">
+                <h3 className="text-2xl text-pink-600">
+                  {
+                    projects.find((project) => project.id === expandedProject)
+                      ?.title
+                  }
+                </h3>
+                <button
+                  onClick={handleClose}
+                  className="text-pink-500 hover:text-pink-700 text-4xl px-4"
+                >
+                  &times;
+                </button>
+              </div>
             </div>
-
+            {/* Scrollable Content */}
             {projects.find((project) => project.id === expandedProject)
               ?.intro && (
               <p className="text-lg text-gray-700 mb-4">

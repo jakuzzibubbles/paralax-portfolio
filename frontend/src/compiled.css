@@ -663,6 +663,10 @@ canvas {
   position: relative;
 }
 
+.sticky{
+  position: sticky;
+}
+
 .inset-0{
   inset: 0px;
 }
@@ -957,6 +961,10 @@ canvas {
   border-width: 1px;
 }
 
+.border-b{
+  border-bottom-width: 1px;
+}
+
 .border-pink-800{
   --tw-border-opacity: 1;
   border-color: rgb(157 23 77 / var(--tw-border-opacity, 1));
@@ -1072,6 +1080,10 @@ canvas {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .pb-20{

@@ -9,14 +9,14 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AnimatedCursor
       color="219,39,119"
-      innerSize={9}
-      outerSize={35}
+      innerSize={10}
+      outerSize={11}
       innerScale={1}
-      outerScale={1.7}
-      outerAlpha={0.4}
+      outerScale={2}
+      outerAlpha={1.4}
       hasBlendMode={false}
       outerStyle={{
-        border: "3px solid rgba(244,114,182,0.6)",
+        border: "219,39,119,0.9",
         mixBlendMode: "exclusion",
       }}
     />
