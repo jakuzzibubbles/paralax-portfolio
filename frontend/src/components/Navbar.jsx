@@ -22,6 +22,11 @@ const Navbar = () => {
     setIsItemsVisible(!isItemsVisible);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false); // Close the menu when an item is clicked
+    setIsItemsVisible(false); // Close the items visibility if needed
+  };
+
   return (
     <>
       {isMenuOpen && (
@@ -39,6 +44,7 @@ const Navbar = () => {
                 spy
                 offset={-100}
                 className="menu-item"
+                onClick={closeMenu}
               >
                 <div>
                   <span className="block text-4xl">LINH</span>
@@ -79,7 +85,6 @@ const Navbar = () => {
               />
             </div>
 
-          
             <div className="realtive p-3 fixed top-6 right-2 z-10">
               <button
                 onClick={toggleItemsVisibility}
@@ -93,7 +98,6 @@ const Navbar = () => {
               </button>
             </div>
 
-         
             <div className="p-3 fixed top-0 right-0 z-50 md:hidden">
               <button
                 onClick={toggleMenu}
@@ -119,6 +123,7 @@ const Navbar = () => {
                   spy
                   offset={-100}
                   className="font-semibold text-6xl text-white"
+                  onClick={closeMenu}
                 >
                   Gallery
                 </Link>
@@ -131,6 +136,7 @@ const Navbar = () => {
                   spy
                   offset={-100}
                   className="font-semibold text-6xl text-white"
+                  onClick={closeMenu}
                 >
                   Skills
                 </Link>
@@ -143,6 +149,7 @@ const Navbar = () => {
                   spy
                   offset={-100}
                   className="font-semibold text-6xl text-white"
+                  onClick={closeMenu}
                 >
                   Contact
                 </Link>
@@ -155,6 +162,7 @@ const Navbar = () => {
                   spy
                   offset={-100}
                   className="font-semibold text-6xl text-white"
+                  onClick={closeMenu}
                 >
                   Resume
                 </Link>
@@ -164,7 +172,6 @@ const Navbar = () => {
         </nav>
       </div>
 
-   
       <div className="p-3 fixed top-0 right-0 z-50 md:hidden">
         <button
           onClick={toggleMenu}
