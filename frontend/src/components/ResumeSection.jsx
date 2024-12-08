@@ -9,12 +9,12 @@ const ResumeSection = () => {
   };
 
   return (
-    <section id="resume" className="p-6 relative mt-10">
-      <div className="buttons mb-4 flex flex-col items-center space-y-4">
+    <section id="resume" className="p-6 relative">
+      <div className="buttons flex flex-col items-center space-y-4">
         {!isResumeVisible ? (
           <button
             onClick={toggleResumeVisibility}
-            className="toggle-resume-btn bg-transparent font-bold text-pink-600 px-4 py-2 rounded border border-pink-900 p-5 rounded-lg shadow-lg hover:bg-pink-600 hover:text-white transition-colors duration-200"
+            className="toggle-resume-btn bg-transparent font-bold text-6xl text-pink-600 px-4 py-2 rounded border border-pink-900 p-5 rounded-lg shadow-lg hover:bg-pink-600 hover:text-white transition-colors duration-200"
           >
             View Resume
           </button>

@@ -792,6 +792,18 @@ canvas {
   margin-top: 1rem;
 }
 
+.mb-44{
+  margin-bottom: 11rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .line-clamp-2{
   overflow: hidden;
   display: -webkit-box;
@@ -1070,10 +1082,6 @@ canvas {
 
 .p-10{
   padding: 2.5rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .p-3{
