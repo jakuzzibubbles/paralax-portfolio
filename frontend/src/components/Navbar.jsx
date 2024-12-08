@@ -23,8 +23,8 @@ const Navbar = () => {
   };
 
   const closeMenu = () => {
-    setIsMenuOpen(false); // Close the menu when an item is clicked
-    setIsItemsVisible(false); // Close the items visibility if needed
+    setIsMenuOpen(false);
+    setIsItemsVisible(false);
   };
 
   return (
