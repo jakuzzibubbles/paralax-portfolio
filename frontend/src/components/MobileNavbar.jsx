@@ -12,10 +12,10 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
   return (
     <div className="w-screen fixed top-0 z-20">
       <div className="w-full h-screen flex flex-col items-center justify-center p-4 bg-pink-800/60 border border-pink-900/80">
-        <div className="ui-circle -ml-20 -mt-10 mb-10" />
+        <div className="ui-circle -ml-20 -mt-20 mb-5" />
 
         <ul className="flex flex-col items-center space-y-5">
-          <li className="mb-5">
+          <li className="mb-3">
             <a
               className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("hero")}
@@ -24,7 +24,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
             </a>
           </li>
 
-          <li className="mb-5">
+          <li className="mb-3">
             <a
               className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("gallery")}
@@ -32,7 +32,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
               Gallery
             </a>
           </li>
-          <li className="mb-5">
+          <li className="mb-3">
             <a
               className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("skills")}
@@ -41,7 +41,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
             </a>
           </li>
 
-          <li className="mb-5">
+          <li className="mb-3">
             <a
               className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("contact")}
@@ -49,7 +49,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
               Contact
             </a>
           </li>
-          <li className="mb-5">
+          <li className="mb-3">
             <a
               className="text-black text-6xl font-semibold"
               onClick={() => handleScroll("resume")}
