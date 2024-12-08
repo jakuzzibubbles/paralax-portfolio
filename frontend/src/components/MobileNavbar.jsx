@@ -11,13 +11,13 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
   };
   return (
     <div className="w-screen fixed top-0 z-20">
-      <div className="w-full h-screen flex flex-col items-center justify-center p-4 bg-pink-800/60 border border-pink-900/80">
+      <div className="w-full h-screen flex flex-col items-center justify-center p-4 bg-pink-900/80 border border-pink-900/80">
         <div className="ui-circle absolute top-0 left-0 -ml-20 -mt-10 mb-10" />
 
         <ul className="flex flex-col items-center space-y-5">
           <li className="mb-3">
             <a
-              className="text-black text-6xl font-semibold"
+              className="text-white text-6xl font-semibold"
               onClick={() => handleScroll("hero")}
             >
               Home
@@ -26,7 +26,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
 
           <li className="mb-3">
             <a
-              className="text-black text-6xl font-semibold"
+              className="text-white text-6xl font-semibold"
               onClick={() => handleScroll("gallery")}
             >
               Gallery
@@ -34,7 +34,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
           </li>
           <li className="mb-3">
             <a
-              className="text-black text-6xl font-semibold"
+              className="text-white text-6xl font-semibold"
               onClick={() => handleScroll("skills")}
             >
               Skills
@@ -43,7 +43,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
 
           <li className="mb-3">
             <a
-              className="text-black text-6xl font-semibold"
+              className="text-white text-6xl font-semibold"
               onClick={() => handleScroll("contact")}
             >
               Contact
@@ -51,7 +51,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
           </li>
           <li className="mb-3">
             <a
-              className="text-black text-6xl font-semibold"
+              className="text-white text-6xl font-semibold"
               onClick={() => handleScroll("resume")}
             >
               Resume

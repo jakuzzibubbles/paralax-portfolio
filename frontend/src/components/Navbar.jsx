@@ -135,9 +135,9 @@ const Navbar = () => {
       <div className="p-3 fixed top-0 right-0 z-50">
         <button
           onClick={toggleMenu}
-          className="w-11 h-11 text-pink bg-pink-800/60 border border-pink-900/80 flex items-center justify-center rounded md:hidden z-50 ml-auto"
+          className="w-11 h-11 text-white bg-pink-800/60 border border-pink-900/80 flex items-center justify-center rounded md:hidden z-50 ml-auto"
         >
-          {isMenuOpen ? <RiCloseFill /> : <CgMenuMotion />}
+          {isMenuOpen ? <RiCloseFill size={24} /> : <CgMenuMotion size={24} />}
         </button>
       </div>
     </>
