@@ -32,7 +32,7 @@ const ResumeSection = () => {
             <img
               src={Resume}
               alt="Resume"
-              width="80%"
+              width="100%"
               style={{ border: "none" }}
             />
           </div>

@@ -867,6 +867,10 @@ canvas {
   max-width: 42rem;
 }
 
+.max-w-full{
+  max-width: 100%;
+}
+
 .max-w-md{
   max-width: 28rem;
 }
@@ -929,8 +933,20 @@ canvas {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
 .overflow-y-auto{
   overflow-y: auto;
+}
+
+.truncate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .text-ellipsis{
@@ -1288,6 +1304,10 @@ canvas {
 }
 
 @media (min-width: 640px){
+  .sm\:w-10\/12{
+    width: 83.333333%;
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

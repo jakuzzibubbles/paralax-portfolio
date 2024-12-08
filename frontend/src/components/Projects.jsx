@@ -63,11 +63,10 @@ const Projects = () => {
 
       {expandedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white w-11/12 md:w-2/3 lg:w-1/2 max-h-screen overflow-y-auto p-6 rounded-lg shadow-lg relative">
-          
+          <div className="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 max-h-screen overflow-y-auto p-6 rounded-lg shadow-lg relative">
             <div className="bg-white z-10 pb-2">
               <div className="flex justify-between items-center mb-1 border-b-2 pb-2">
-                <h3 className="text-2xl text-pink-600">
+                <h3 className="text-2xl text-pink-600 truncate max-w-full">
                   {
                     projects.find((project) => project.id === expandedProject)
                       ?.title
@@ -112,7 +111,7 @@ const Projects = () => {
                 )}
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center">
               {projects.find((project) => project.id === expandedProject)
                 ?.demo && (
                 <a
