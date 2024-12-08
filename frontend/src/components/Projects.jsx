@@ -36,7 +36,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="gallery" className="p-10">
+    <section id="gallery" className="p-10 mt-14">
       <h2 className="text-3xl text-center mb-5">Gallery</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((project) => (

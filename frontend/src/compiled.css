@@ -764,6 +764,10 @@ canvas {
   margin-top: 2.5rem;
 }
 
+.mt-14{
+  margin-top: 3.5rem;
+}
+
 .mt-16{
   margin-top: 4rem;
 }
@@ -875,8 +879,8 @@ canvas {
   width: 100vw;
 }
 
-.max-w-2xl{
-  max-width: 42rem;
+.max-w-4xl{
+  max-width: 56rem;
 }
 
 .max-w-full{

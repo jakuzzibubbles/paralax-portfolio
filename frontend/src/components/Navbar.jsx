@@ -47,8 +47,8 @@ const Navbar = () => {
                 onClick={closeMenu}
               >
                 <div>
-                  <span className="block text-4xl">LINH</span>
-                  <span className="block text-4xl">NGUYEN</span>
+                  <span className="block text-4xl font-semibold">LINH</span>
+                  <span className="block text-4xl font-semibold">NGUYEN</span>
                 </div>
               </Link>
             </li>
