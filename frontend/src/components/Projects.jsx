@@ -80,7 +80,7 @@ const Projects = () => {
                 </button>
               </div>
             </div>
-            {/* Scrollable Content */}
+       
             {projects.find((project) => project.id === expandedProject)
               ?.intro && (
               <p className="text-lg text-gray-700 mb-4">

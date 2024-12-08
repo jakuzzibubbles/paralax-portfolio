@@ -12,7 +12,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
   return (
     <div className="w-screen fixed top-0 z-20">
       <div className="w-full h-screen flex flex-col items-center justify-center p-4 bg-pink-800/60 border border-pink-900/80">
-        <div className="ui-circle -ml-20 -mt-20 mb-5" />
+        <div className="ui-circle absolute top-0 left-0 -ml-20 -mt-10 mb-10" />
 
         <ul className="flex flex-col items-center space-y-5">
           <li className="mb-3">
