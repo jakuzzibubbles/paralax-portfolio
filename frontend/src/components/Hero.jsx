@@ -36,7 +36,7 @@ const Hero = () => {
             done.
           </p>
 
-          <p>✅</p>
+          <p>✅ ✅ ✅</p>
 
           <p className="mb-4">I look forward to discuss your next project.</p>
         </div>
