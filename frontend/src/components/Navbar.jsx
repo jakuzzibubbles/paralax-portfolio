@@ -113,7 +113,7 @@ const Navbar = () => {
           </ul>
 
           {isItemsVisible && (
-            <div className="flex flex-col gap-6 ml-auto px-4 bg-pink-800/60 w-1/3 fixed right-0 top-0 h-full items-center justify-center list-none">
+            <div className="flex flex-col gap-6 ml-auto px-4 bg-pink-900/80 w-1/3 fixed right-0 top-0 h-full items-center justify-center list-none">
               <div className="ui-circle absolute top-0 left-0 -ml-20 -mt-10 mb-10 transition-opacity duration-300"></div>
               <li>
                 <Link
