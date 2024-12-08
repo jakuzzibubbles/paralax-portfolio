@@ -2,9 +2,9 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="h-screen flex flex-col justify-center items-center text-center text-black pt-16"
+      className="flex flex-col justify-center items-center text-center text-black pt-16"
     >
-      <div className="w-screen p-6 flex flex-col justify-center items-center mt-16">
+      <div className="w-screen p-6 flex flex-col justify-center items-center mt-20">
         <h3 className="text-3xl text-black">Hi, and welcome to my Portfolio</h3>
         <div className="text-black mt-4 max-w-2xl">
           <p className="mb-4">
