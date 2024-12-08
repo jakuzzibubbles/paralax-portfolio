@@ -16,8 +16,11 @@
   body {
     overflow-x: hidden;
     background: transparent;
-  
   }
+
+    nav {
+      transition: opacity 0.3s ease;
+    }
 
 
   #bg {
@@ -49,6 +52,7 @@
 .scroll-lock {
   overflow: hidden;
 }
+
 
 
 
