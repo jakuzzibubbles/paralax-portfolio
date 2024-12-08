@@ -20,7 +20,7 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
           />
         )}
 
-        <ul className="flex flex-col items-center space-y-5 mt-40">
+        <ul className="flex flex-col items-center space-y-5 mt-38">
           <li className="mb-3">
             <a
               className="text-white text-6xl font-semibold"
