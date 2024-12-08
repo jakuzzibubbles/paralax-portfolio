@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Skills = () => {
   return (
-    <section className="max-w-screen-xl px-6 mx-auto pb-20 mt-28" id="skills">
+    <section className="max-w-screen-xl px-6 mx-auto pb-20 mt-16" id="skills">
       <div className="p-4 md:p-8">
         <h2 className="text-3xl text-center mb-5 mt-24">Languages & Tools</h2>
 
