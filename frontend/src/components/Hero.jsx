@@ -5,7 +5,7 @@ const Hero = () => {
       className="flex flex-col justify-center items-center text-center text-black text-xl font-semibold pt-16"
     >
       <div className="w-screen p-6 flex flex-col justify-center items-center">
-        <h3 className="text-3xl text-black">Hi, and welcome to my Portfolio</h3>
+        <h3 className="text-3xl text-black">Hi,</h3>
         <div className="text-black mt-4 max-w-4xl">
           <p className="mb-4">
             I&apos;m Linh, Free-time Software Developer and professional Project

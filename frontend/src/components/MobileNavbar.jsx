@@ -12,9 +12,15 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
   return (
     <div className="w-screen fixed top-0 z-20">
       <div className="w-full h-screen flex flex-col items-center justify-center p-4 bg-pink-900/80 border border-pink-900/80">
-        <div className="ui-circle absolute top-0 left-0 -ml-20 -mt-10 mb-10" />
+        {isOpen && (
+          <img
+            src="/assets/myself.png" // Replace with your image file name
+            alt="Decorative"
+            className="absolute top-[15%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 rounded-full"
+          />
+        )}
 
-        <ul className="flex flex-col items-center space-y-5">
+        <ul className="flex flex-col items-center space-y-5 mt-40">
           <li className="mb-3">
             <a
               className="text-white text-6xl font-semibold"
