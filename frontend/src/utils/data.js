@@ -47,7 +47,7 @@ const personalDetails = {
     {
       id: "3",
       name: "Email",
-      url: "mailto:jakuzzi263@icloud.com",
+      url: "mailto:linhnguyenprivat@gmail.com",
       icon: FaEnvelope,
     },
   ],
