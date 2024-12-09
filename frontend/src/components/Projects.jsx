@@ -83,7 +83,7 @@ const Projects = () => {
        
             {projects.find((project) => project.id === expandedProject)
               ?.intro && (
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-xs text-gray-700 mb-4">
                 {
                   projects.find((project) => project.id === expandedProject)
                     ?.intro
@@ -104,7 +104,7 @@ const Projects = () => {
                 className="w-full h-60 object-cover rounded-lg mb-4"
               />
               <div
-                className="mb-4"
+                className="mb-4 text-xs"
                 dangerouslySetInnerHTML={renderDescription(
                   projects.find((project) => project.id === expandedProject)
                     ?.description
@@ -121,7 +121,7 @@ const Projects = () => {
                   }
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-pink-400/50 text-center text-pink-800 text-xl py-2 px-14 rounded hover:bg-pink-600 hover:text-white transition-colors duration-200"
+                  className="bg-pink-600/50 text-center text-pink-800 text-md py-2 px-14 rounded hover:bg-pink-600 hover:text-white transition-colors duration-200"
                 >
                   Demo
                 </a>
