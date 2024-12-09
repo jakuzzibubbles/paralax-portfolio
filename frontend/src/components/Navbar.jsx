@@ -88,7 +88,7 @@ const Navbar = () => {
             <div className="realtive p-3 fixed top-6 right-2 z-10">
               <button
                 onClick={toggleItemsVisibility}
-                className="w-11 h-11 bg-pink-800/60 border border-pink-900/80 flex items-center justify-center rounded z-50"
+                className="w-11 h-11 bg-pink-600 border border-pink-900/80 flex items-center justify-center rounded z-50"
               >
                 {isItemsVisible ? (
                   <RiCloseFill size={24} className="text-white" />

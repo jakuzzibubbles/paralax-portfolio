@@ -83,7 +83,7 @@ const Projects = () => {
        
             {projects.find((project) => project.id === expandedProject)
               ?.intro && (
-              <p className="text-xs text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4">
                 {
                   projects.find((project) => project.id === expandedProject)
                     ?.intro
@@ -104,7 +104,7 @@ const Projects = () => {
                 className="w-full h-60 object-cover rounded-lg mb-4"
               />
               <div
-                className="mb-4 text-xs"
+                className="mb-4 text-md"
                 dangerouslySetInnerHTML={renderDescription(
                   projects.find((project) => project.id === expandedProject)
                     ?.description

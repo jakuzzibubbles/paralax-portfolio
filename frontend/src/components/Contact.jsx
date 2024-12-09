@@ -7,19 +7,22 @@ const Contact = () => {
       className="h-screen text-pink flex flex-col items-center justify-center mt-10"
     >
       <div className="w-full max-w-md">
-        <h2 className="text-center w-full p-3 rounded-lg text-pink text-4xl font-semibold">
+        <h2 className="text-center w-full p-3 rounded-lg text-black text-4xl font-semibold">
           Let&apos;s Connect 🦉
         </h2>
         <div className="flex justify-center items-center gap-4 flex-wrap">
           {personalDetails.links.map((link) => (
-            <div key={link.id} className="bg-pink-600 p-3 rounded-lg">
+            <div
+              key={link.id}
+              className="bg-pink-600 p-3 rounded-lg border border-pink-900/80"
+            >
               <a
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={link.name}
               >
-                <link.icon className="text-xl text-black" />
+                <link.icon className="text-xl" />
               </a>
             </div>
           ))}
