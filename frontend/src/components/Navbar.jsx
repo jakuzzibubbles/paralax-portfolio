@@ -3,12 +3,7 @@ import { Link } from "react-scroll";
 import { RiCloseFill } from "react-icons/ri";
 import { CgMenuMotion } from "react-icons/cg";
 import MobileNavbar from "./MobileNavbar";
-import awsKnowledge from "/assets/aws-knowledge.png";
-import awsBuilder from "/assets/aws-builder.png";
-import aws from "/assets/aws.png";
-import Linux from "/assets/linux.jpg";
 import Myself from "/assets/myself.png";
-import awsQuest from "/assets/aws-quest.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,37 +53,12 @@ const Navbar = () => {
                 alt="Profile"
                 className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full transition-transform duration-300 ease-in-out hover:scale-125 border border-pink-800 mr-4"
               />
-              {/* <img
-                src={Linux}
-                alt="Linux"
-                className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] transition-transform duration-300 ease-in-out hover:scale-150 mr-2"
-              />
-              <img
-                src={aws}
-                alt="AWS"
-                className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
-              />
-              <img
-                src={awsQuest}
-                alt="AWS"
-                className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
-              />
-              <img
-                src={awsKnowledge}
-                alt="AWS"
-                className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
-              />
-              <img
-                src={awsBuilder}
-                alt="AWS"
-                className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
-              /> */}
             </div>
 
             <div className="realtive p-3 fixed top-6 right-2 z-10">
               <button
                 onClick={toggleItemsVisibility}
-                className="w-11 h-11 bg-pink-600 border border-pink-900/80 flex items-center justify-center rounded z-50"
+                className="w-11 h-11 bg-pink-600 border border-pink-900/80 flex items-center justify-center rounded z-50 rounded-full hover:text-white"
               >
                 {isItemsVisible ? (
                   <RiCloseFill size={24} className="text-white" />
