@@ -176,7 +176,7 @@ const projects = [
     description:
       "A note-taking application utilizing the MERN stack (MongoDB, Express, React, Node.js) that enables users to create, read, update, and delete notes, with authentication management.\n\n- Project Setup\n\n1. **Project Structure**:\n   - Create the project directory with `backend` and `frontend` folders.\n\n2. **Backend Setup**:\n   - Initialize Node.js project in the backend with `npm init -y`.\n   - Install dependencies: `express`, `mongoose`, `bcryptjs`, `jsonwebtoken`, `dotenv`, `cors`.\n   - Set up Express server and connect to MongoDB.\n   - Create API routes for user authentication and note management.\n\n3. **Frontend Setup**:\n   - Create the React app using Vite.\n   - Install dependencies: `axios`, `react-router-dom`, `react-icons`.\n   - Implement routing and UI components for note management and authentication.\n\n- Key Features\n- **Authentication**: User login and sign-up with JWT-based authentication.\n- **Dashboard**: Display and manage notes (create, edit, delete, pin).\n- **Note Management**: Add, edit, delete, and search notes with UI for creating new notes and editing existing ones.\n- **UI Elements**: Toast messages for notifications, icons for actions like pinning and deleting notes.\n\n- Dependencies\n\n- **Backend**:\n  - `express`, `mongoose`, `bcryptjs`, `jsonwebtoken`, `dotenv`, `cors`, `moment`.\n\n- **Frontend**:\n  - `axios`, `react-router-dom`, `react-icons`.",
     image: TaskManager,
-    demo: "https://jakuzzibubbles.github.io/MERN-Notes/",
+    demo: "https://github.com/jakuzzibubbles/MERN-Notes",
   },
   {
     id: "5",
