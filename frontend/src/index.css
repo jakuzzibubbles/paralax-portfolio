@@ -53,7 +53,9 @@
   overflow: hidden;
 }
 
-
+.custom-gap {
+  column-gap: 0.05rem;
+}
 
 
 @layer components {

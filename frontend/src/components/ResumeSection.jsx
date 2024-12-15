@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Resume from "/assets/resume.png";
+import Resume1 from "/assets/resume1.png";
+import Resume2 from "/assets/resume2.png";
 
 const ResumeSection = () => {
   const [isResumeVisible, setIsResumeVisible] = useState(false);
@@ -28,12 +29,16 @@ const ResumeSection = () => {
         )}
 
         {isResumeVisible && (
-          <div className="resume-container mt-4 flex justify-center">
+          <div className="resume-container mt-4 flex flex-wrap justify-center gap-4">
             <img
-              src={Resume}
-              alt="Resume"
-              width="100%"
-              style={{ border: "none" }}
+              src={Resume1}
+              alt="Resume page 1"
+              className="resume-page w-full md:w-[48%] lg:w-[48%]"
+            />
+            <img
+              src={Resume2}
+              alt="Resume Page 2"
+              className="resume-page w-full md:w-[48%] lg:w-[48%]"
             />
           </div>
         )}

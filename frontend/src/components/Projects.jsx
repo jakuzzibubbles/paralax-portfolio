@@ -38,16 +38,16 @@ const Projects = () => {
   return (
     <section id="gallery" className="p-10 mt-14">
       <h2 className="text-3xl text-center mb-5">Gallery</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 gap-y-10">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="border border-pink-900 p-5 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-pink-600/20"
+            className="border border-pink-900 p-5 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-pink-600/20 w-full max-w-xs mx-auto"
           >
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-40 object-cover rounded-lg"
+              className="object-cover rounded-lg"
             />
             <h3 className="text-2xl text-right mt-3">{project.title}</h3>
             <p className="mt-2 text-ellipsis line-clamp-2">{project.intro}</p>
@@ -80,7 +80,7 @@ const Projects = () => {
                 </button>
               </div>
             </div>
-       
+
             {projects.find((project) => project.id === expandedProject)
               ?.intro && (
               <p className="text-gray-700 mb-4">
@@ -101,7 +101,7 @@ const Projects = () => {
                   projects.find((project) => project.id === expandedProject)
                     ?.title
                 }
-                className="w-full h-60 object-cover rounded-lg mb-4"
+                className="object-cover rounded-lg mb-4"
               />
               <div
                 className="mb-4 text-md"
