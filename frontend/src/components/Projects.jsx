@@ -42,18 +42,18 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="border border-pink-900 p-5 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-pink-600/20 w-full max-w-xs mx-auto"
+            className="border border-pink-900 p-5 rounded-lg shadow-lg transition duration-300 ease-in-out w-full max-w-xs mx-auto bg-pink-600"
           >
-            <img
+            {/* <img
               src={project.image}
               alt={project.title}
               className="object-cover rounded-lg"
-            />
-            <h3 className="text-2xl text-right mt-3">{project.title}</h3>
+            /> */}
+            <h3 className="text-2xl text-left mt-3">{project.title}</h3>
             <p className="mt-2 text-ellipsis line-clamp-2">{project.intro}</p>
             <button
               onClick={() => handleProjectClick(project.id)}
-              className="mt-2 text-pink-950 font-semibold hover:underline"
+              className="mt-2 text-white font-semibold hover:underline"
             >
               View Details
             </button>
