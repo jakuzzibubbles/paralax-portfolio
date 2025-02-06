@@ -45,7 +45,7 @@ const ResumeSection = () => {
 
         {isResumeVisible && (
           <a
-            href="/LinhNguyen.pdf"
+            href="/Linh Nguyen Resume.pdf"
             download="LinhNguyen.pdf"
             className="download-btn bg-transparent text-pink-600 px-4 py-2 rounded hover:bg-pink-600 hover:text-white transition-colors duration-200"
           >
