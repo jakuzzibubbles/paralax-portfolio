@@ -1145,12 +1145,12 @@ canvas {
   padding-top: 4rem;
 }
 
-.text-center{
-  text-align: center;
+.text-left{
+  text-align: left;
 }
 
-.text-right{
-  text-align: right;
+.text-center{
+  text-align: center;
 }
 
 .text-2xl{
@@ -1171,6 +1171,10 @@ canvas {
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-\[100px\]{
+  font-size: 100px;
 }
 
 .text-base{
@@ -1227,11 +1231,6 @@ canvas {
 .text-pink-800{
   --tw-text-opacity: 1;
   color: rgb(157 23 77 / var(--tw-text-opacity, 1));
-}
-
-.text-pink-950{
-  --tw-text-opacity: 1;
-  color: rgb(80 7 36 / var(--tw-text-opacity, 1));
 }
 
 .text-white{
@@ -1311,10 +1310,6 @@ canvas {
 .hover\:bg-pink-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-pink-600\/20:hover{
-  background-color: rgb(219 39 119 / 0.2);
 }
 
 .hover\:bg-pink-700:hover{

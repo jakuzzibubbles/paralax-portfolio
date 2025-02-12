@@ -124,7 +124,7 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="resume"
                   smooth="easeInOutQuint"
@@ -136,7 +136,7 @@ const Navbar = () => {
                 >
                   Resume
                 </Link>
-              </li>
+              </li> */}
             </div>
           )}
         </nav>

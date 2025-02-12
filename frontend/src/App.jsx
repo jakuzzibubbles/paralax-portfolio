@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
-import ResumeSection from "./components/ResumeSection";
+// import ResumeSection from "./components/ResumeSection";
 import SceneInit from "./components/SceneInit";
 import { RiCameraAiFill, RiCameraOffFill } from "react-icons/ri";
 
@@ -41,7 +41,7 @@ const App = () => {
                 <Projects />
                 <Skills />
                 <Contact />
-                <ResumeSection />
+                {/* <ResumeSection /> */}
               </>
             }
           />

@@ -55,14 +55,14 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
               Contact
             </a>
           </li>
-          <li className="mb-3">
+          {/* <li className="mb-3">
             <a
               className="text-white text-6xl font-semibold"
               onClick={() => handleScroll("resume")}
             >
               Resume
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
