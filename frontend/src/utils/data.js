@@ -41,7 +41,7 @@ const personalDetails = {
     {
       id: "2",
       name: "LinkedIn",
-      url: "https://linkedin.com/in/jakuzzi263/",
+      url: "https://linkedin.com/in/jakuzzibubbles/",
       icon: FaLinkedin,
     },
     {
